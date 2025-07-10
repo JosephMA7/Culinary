@@ -6,31 +6,369 @@ body {
   color: #333;
 }
 
-header, section, footer {
-  padding: 40px 20px;
+/* Estilos generales del navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f8ff;
+  padding: 20px 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Estilo del logo */
+.logo {
+  height: 60px;
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Estilo del enlace activo */
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+  color: #00308F;
+}
+
+nav ul li a.active {
+  color: #00308F;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00308F;
+  border-radius: 1px;
+}
+
+/* Botón Cuenta */
+.btn-cuenta {
+  background-color: #247eff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cuenta:hover {
+  background-color: #1a65d6;
+}
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  background-color: #f2f5ff;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+  font-weight: 700;
+}
+
+.hero-content .azul {
+  color: #00308F;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: #247eff;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1a5fd1;
+}
+
+.hero-img {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+#about {
+  padding: 80px 60px;
+  background-color: #f5f8ff;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 28px;
+  color: #00308F;
+  margin-bottom: 20px;
+}
+
+.descripcion-about {
+  max-width: 950px;
+  margin: 0 auto 30px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.btn-info {
+  background-color: #247eff;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: background-color 0.3s;
+}
+
+.btn-info:hover {
+  background-color: #1a5fd1;
+}
+
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.miembro {
+  text-align: center;
+  width: 160px;
+}
+
+.miembro img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00308F;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nombre {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.rol {
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.centrado {
+  text-align: center;
+  margin-top: 20px;
+}
+#servicios {
+  padding: 60px;
+  background-color: #ffffff;
+}
+
+.titulo-seccion {
+  font-size: 28px;
+  color: #00308F;
+  margin-bottom: 20px;
+  text-align: center;  
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.tarjeta-servicio {
+  background-color: #f5f8ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px 25px;
+  max-width: 320px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-servicio img {
+  width: 40px;
+  height: 40px;
+}
+
+.texto-servicio h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111;
+}
+
+.texto-servicio p {
+  font-size: 14px;
+  color: #444;
+  margin: 8px 0;
+}
+
+.texto-servicio a {
+  color: #247eff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+#app {
+  padding: 60px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.descripcion-app {
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.app-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.app-imagenes img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-descargar {
+  background-color: #247eff;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-descargar:hover {
+  background-color: #1a65d6;
+}
+
+footer {
+  background-color: #f5f8ff;
+  padding: 40px 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
   max-width: 1200px;
   margin: auto;
 }
 
-h1, h2, h3 {
-  color: #00308F;
+.footer-col {
+  flex: 1;
+  min-width: 250px;
 }
 
-button {
-  background-color: #247eff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.footer-logo {
+  height: 60px;
+  margin-bottom: 10px;
 }
 
-a {
-  color: #247eff;
-  text-decoration: none;
+.footer-slogan {
+  font-size: 14px;
+  color: #444;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #111;
 }
+
+.footer-col p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-icons img {
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+

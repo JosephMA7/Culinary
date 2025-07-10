@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CulinaryShare</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="imagenes/Logo_Culinary.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <nav class="navbar">
-    <img src="images/logo.png" alt="CulinaryShare" class="logo">
+<header class="navbar">
+  <img src="imagenes/Logo_Culinary.png" alt="CulinaryShare" class="logo">
+  <nav>
     <ul>
       <li><a href="#hero">Inicio</a></li>
       <li><a href="#about">Sobre nosotros</a></li>
@@ -17,38 +18,137 @@
       <li><a href="#comunidad">Comunidad</a></li>
       <li><a href="#app">Nuestra App</a></li>
     </ul>
-    <button class="btn-cuenta">Cuenta</button>
   </nav>
+  <button class="btn-cuenta">Cuenta</button>
 </header>
 
-
-  <!-- Hero Section -->
 <section id="hero">
-  <h1>Nos especializamos en la creación de una<br><span class="azul">Aplicación Móvil</span></h1>
-  <p>Accederás a una app móvil totalmente libre de riesgo, a través de un medio de aprendizaje <strong>hecho para ti</strong>.</p>
-  <button>Descárgala Ahora</button>
-  <img src="images/hero-img.png" alt="Ilustración App">
+  <div class="hero-content">
+    <h1>Nos especializamos en la creación de una<br><span class="azul">Aplicación Móvil</span></h1>
+    <p>Accederás a una app móvil totalmente libre de riesgo, a través de un medio de aprendizaje <strong>hecho para ti</strong>.</p>
+    <button class="btn-primary">Descárgala Ahora</button>
+  </div>
+  <div class="hero-img">
+    <img src="imagenes/imagen1.png" alt="Ilustración App">
+  </div>
 </section>
 
 
+
   <!-- ¿Qué es CulinaryShare? -->
-  <section id="about">
-    <!-- Descripción + Fotos del equipo -->
-  </section>
+<section id="about">
+  <h2 class="titulo-seccion">¿Qué es CulinaryShare?</h2>
+  <p class="descripcion-about">
+    CulinaryShare es una aplicación de gastronomía innovadora que conecta a los amantes de la cocina con restaurantes y recetas de manera única.
+    Permite a los usuarios descubrir sus recetas favoritas y encontrar, a través de geolocalización, restaurantes cercanos que las ofrecen. Además,
+    brinda la posibilidad de reservar mesas directamente desde la app, creando una experiencia integral tanto para quienes disfrutan comer fuera
+    como para los que prefieren cocinar en casa. Los restaurantes, por su parte, pueden actualizar sus menús y gestionar sus reservas, fortaleciendo
+    así su presencia digital. CulinaryShare no solo te guía hacia una buena comida, sino también hacia una mejor conexión entre la cocina, el hogar y el restaurante.
+  </p>
+  <div class="centrado">
+    <button class="btn-info">Más información</button>
+  </div>
+
+  <div class="equipo">
+    <div class="miembro">
+      <img src="imagenes/integrante1.png" alt="Isaac Mariscal">
+      <p class="nombre">Isaac Mariscal</p>
+      <p class="rol">Frontend</p>
+    </div>
+    <div class="miembro">
+      <img src="imagenes/integrante2.png" alt="Joseph Martínez">
+      <p class="nombre">Joseph Martínez</p>
+      <p class="rol">Frontend</p>
+    </div>
+    <div class="miembro">
+      <img src="imagenes/integrante3.png" alt="Emilio Piedra">
+      <p class="nombre">Emilio Piedra</p>
+      <p class="rol">UI/UX</p>
+    </div>
+    <div class="miembro">
+      <img src="imagenes/norman.jpg" alt="Norman Andrés Martínez Bravo">
+      <p class="nombre">Norman Andrés Martínez Bravo</p>
+      <p class="rol">Backend</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- Nuestros Servicios -->
-  <section id="servicios">
-    <!-- Gastronomía y Comunidad -->
-  </section>
+<h2 class="titulo-seccion">Nuestros servicios</h2>
+
+<div class="contenedor-servicios">
+  <div class="tarjeta-servicio">
+    <img src="imagenes/logoGastronomia.png" alt="Gastronomía">
+    <div class="texto-servicio">
+      <h3>Gastronomía</h3>
+      <p>Los mejores platos de la gastronomía local ¡encuéntralos aquí!</p>
+      <a href="#">Leer más</a>
+    </div>
+  </div>
+
+  <div class="tarjeta-servicio">
+    <img src="imagenes/logoComunidad.png" alt="Comunidad">
+    <div class="texto-servicio">
+      <h3>Comunidad</h3>
+      <p>Estarás rodeado de personas amantes de la gastronomía, quienes recomendarán los mejores lugares para comer.</p>
+      <a href="#">Acceder a la comunidad</a>
+    </div>
+  </div>
+</div>
+
 
   <!-- Nuestra App -->
-  <section id="app">
-    <!-- Texto descriptivo + Imágenes de la app -->
-  </section>
+<h2 class="titulo-seccion">Nuestra App</h2>
+<p class="descripcion-app">
+  CulinaryShare te conecta con la gastronomía como nunca antes: explora recetas, descubre restaurantes cercanos que las preparan y 
+  reserva tu mesa desde la app. Cocina en casa o vive la experiencia fuera, tú eliges.
+</p>
+
+<div class="app-imagenes">
+  <img src="imagenes/pantalla1.png" alt="Pantalla login">
+  <img src="imagenes/pantalla2.png" alt="Pantalla categorías">
+  <img src="imagenes/pantalla3.png" alt="Pantalla mapa restaurantes">
+  <img src="imagenes/pantalla4.png" alt="Pantalla reservar mesa">
+</div>
+
+<div class="centrado">
+  <button class="btn-descargar">Descárgala Ya!</button>
+</div>
+
 
   <!-- Footer -->
   <footer>
-    <!-- Logo + redes sociales + contacto -->
-  </footer>
+  <div class="footer-container">
+    <!-- Logo -->
+    <div class="footer-col">
+      <img src="imagenes/Logo_Culinary.png" alt="CulinaryShare" class="footer-logo">
+      <p class="footer-slogan">La receta en la palma de tu mano</p>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="footer-col">
+      <h4>Redes sociales</h4>
+      <p>Nuestras redes sociales, para que puedas revisar todo el contenido que ofrecemos</p>
+      <div class="footer-icons">
+        <img src="imagenes/icono_what.png" alt="WhatsApp">
+        <img src="imagenes/icono_facebook.png" alt="Facebook">
+        <img src="imagenes/icono_insta.png" alt="Instagram">
+        <img src="imagenes/logo_youtube.png" alt="YouTube">
+        <img src="imagenes/logo_tiktok.png" alt="TikTok">
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-col">
+      <h4>Contáctanos</h4>
+      <p>📞 (593) 95 618 7587</p>
+      <p>📧 fnewwave1@gmail.com</p>
+      <p>📍 Dirección: 18 de Noviembre y Colón (Loja – Ecuador)</p>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
